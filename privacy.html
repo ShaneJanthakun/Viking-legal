@@ -11,55 +11,186 @@
   h1 { font-size: 1.6em; margin-bottom: 0; }
   h2 { font-size: 1.2em; margin-top: 2em; }
   .updated { color: #888; font-size: 0.9em; }
-  hr { margin: 3em 0; border: none; border-top: 1px solid #8884; }
   a { color: #b8860b; }
+  section[data-lang] { display: none; }
+  .langs { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 8px; }
+  .langs button { font: inherit; font-size: 0.85em; padding: 4px 10px; border-radius: 14px; border: 1px solid #8886; background: transparent; color: inherit; cursor: pointer; }
+  .langs button.active { background: #b8860b; border-color: #b8860b; color: #fff; }
 </style>
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
-<p class="updated">Viking: Party Game — Last updated: 7 August 2026</p>
+<div class="langs" id="langs">
+  <button data-pick="en">English</button>
+  <button data-pick="no">Norsk</button>
+  <button data-pick="sv">Svenska</button>
+  <button data-pick="da">Dansk</button>
+  <button data-pick="fr">Français</button>
+  <button data-pick="es">Español</button>
+  <button data-pick="pt">Português</button>
+  <button data-pick="th">ไทย</button>
+</div>
 
-<h2>Summary</h2>
-<p>Viking: Party Game does not collect, store, or share any personal data. There are no accounts, no analytics, no tracking, and no ads.</p>
+<section data-lang="en">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Viking: Party Game — Last updated: 7 August 2026</p>
+  <h2>Summary</h2>
+  <p>Viking: Party Game does not collect, store, or share any personal data. There are no accounts, no analytics, no tracking, and no ads.</p>
+  <h2>Data stored on your device</h2>
+  <p>Player names, custom decks, and photos you add to custom cards are stored only locally on your device. They are never uploaded anywhere and are deleted when you delete the app.</p>
+  <h2>Purchases</h2>
+  <p>Subscriptions are processed by Apple through the App Store. To validate purchases, the app uses RevenueCat, which processes an anonymous, randomly generated identifier and purchase receipts. This identifier cannot be used to identify you personally. See <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat's privacy policy</a>.</p>
+  <h2>Photos</h2>
+  <p>If you add photos to custom cards, the app asks for photo library access. Selected photos never leave your device.</p>
+  <h2>Children</h2>
+  <p>The app is rated 17+ and is not directed at children.</p>
+  <h2>Contact</h2>
+  <p>Questions? Contact us at <a href="mailto:shanebusiness99@gmail.com">shanebusiness99@gmail.com</a>.</p>
+</section>
 
-<h2>Data stored on your device</h2>
-<p>Player names, custom decks, and photos you add to custom cards are stored only locally on your device. They are never uploaded anywhere and are deleted when you delete the app.</p>
+<section data-lang="no">
+  <h1>Personvernerklæring</h1>
+  <p class="updated">Viking: Party Game — Sist oppdatert: 7. august 2026</p>
+  <h2>Oppsummering</h2>
+  <p>Viking: Party Game samler ikke inn, lagrer eller deler personopplysninger. Ingen kontoer, ingen analyse, ingen sporing og ingen reklame.</p>
+  <h2>Data lagret på enheten din</h2>
+  <p>Spillernavn, egendefinerte kortstokker og bilder du legger til på egne kort lagres kun lokalt på enheten din. De lastes aldri opp noe sted og slettes når du sletter appen.</p>
+  <h2>Kjøp</h2>
+  <p>Abonnementer behandles av Apple via App Store. For å validere kjøp bruker appen RevenueCat, som behandler en anonym, tilfeldig generert identifikator og kjøpskvitteringer. Identifikatoren kan ikke brukes til å identifisere deg. Se <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCats personvernerklæring</a>.</p>
+  <h2>Bilder</h2>
+  <p>Hvis du legger bilder på egne kort, ber appen om tilgang til bildebiblioteket. Valgte bilder forlater aldri enheten din.</p>
+  <h2>Barn</h2>
+  <p>Appen har aldersgrense 17+ og er ikke rettet mot barn.</p>
+  <h2>Kontakt</h2>
+  <p>Spørsmål? Kontakt oss på <a href="mailto:shanebusiness99@gmail.com">shanebusiness99@gmail.com</a>.</p>
+</section>
 
-<h2>Purchases</h2>
-<p>Subscriptions are processed by Apple through the App Store. To validate purchases, the app uses RevenueCat, which processes an anonymous, randomly generated identifier and purchase receipts. This identifier cannot be used to identify you personally. See <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat's privacy policy</a>.</p>
+<section data-lang="sv">
+  <h1>Integritetspolicy</h1>
+  <p class="updated">Viking: Party Game — Senast uppdaterad: 7 augusti 2026</p>
+  <h2>Sammanfattning</h2>
+  <p>Viking: Party Game samlar inte in, lagrar eller delar några personuppgifter. Inga konton, ingen analys, ingen spårning och inga annonser.</p>
+  <h2>Data som lagras på din enhet</h2>
+  <p>Spelarnamn, egna kortlekar och foton du lägger till på egna kort lagras endast lokalt på din enhet. De laddas aldrig upp någonstans och raderas när du tar bort appen.</p>
+  <h2>Köp</h2>
+  <p>Prenumerationer hanteras av Apple via App Store. För att validera köp använder appen RevenueCat, som behandlar en anonym, slumpmässigt genererad identifierare och köpkvitton. Identifieraren kan inte användas för att identifiera dig. Se <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCats integritetspolicy</a>.</p>
+  <h2>Foton</h2>
+  <p>Om du lägger till foton på egna kort ber appen om åtkomst till bildbiblioteket. Valda foton lämnar aldrig din enhet.</p>
+  <h2>Barn</h2>
+  <p>Appen har åldersgräns 17+ och riktar sig inte till barn.</p>
+  <h2>Kontakt</h2>
+  <p>Frågor? Kontakta oss på <a href="mailto:shanebusiness99@gmail.com">shanebusiness99@gmail.com</a>.</p>
+</section>
 
-<h2>Photos</h2>
-<p>If you add photos to custom cards, the app asks for photo library access. Selected photos never leave your device.</p>
+<section data-lang="da">
+  <h1>Privatlivspolitik</h1>
+  <p class="updated">Viking: Party Game — Senest opdateret: 7. august 2026</p>
+  <h2>Opsummering</h2>
+  <p>Viking: Party Game indsamler, gemmer eller deler ingen personoplysninger. Ingen konti, ingen analyse, ingen sporing og ingen reklamer.</p>
+  <h2>Data gemt på din enhed</h2>
+  <p>Spillernavne, egne kortsæt og fotos, du tilføjer til egne kort, gemmes kun lokalt på din enhed. De uploades aldrig og slettes, når du sletter appen.</p>
+  <h2>Køb</h2>
+  <p>Abonnementer behandles af Apple via App Store. Til validering af køb bruger appen RevenueCat, som behandler en anonym, tilfældigt genereret identifikator og købskvitteringer. Identifikatoren kan ikke bruges til at identificere dig. Se <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCats privatlivspolitik</a>.</p>
+  <h2>Fotos</h2>
+  <p>Hvis du tilføjer fotos til egne kort, beder appen om adgang til fotobiblioteket. Valgte fotos forlader aldrig din enhed.</p>
+  <h2>Børn</h2>
+  <p>Appen har aldersgrænsen 17+ og henvender sig ikke til børn.</p>
+  <h2>Kontakt</h2>
+  <p>Spørgsmål? Kontakt os på <a href="mailto:shanebusiness99@gmail.com">shanebusiness99@gmail.com</a>.</p>
+</section>
 
-<h2>Children</h2>
-<p>The app is rated 17+ and is not directed at children.</p>
+<section data-lang="fr">
+  <h1>Politique de confidentialité</h1>
+  <p class="updated">Viking: Party Game — Dernière mise à jour : 7 août 2026</p>
+  <h2>Résumé</h2>
+  <p>Viking: Party Game ne collecte, ne stocke et ne partage aucune donnée personnelle. Pas de comptes, pas d'analyse, pas de suivi et pas de publicité.</p>
+  <h2>Données stockées sur votre appareil</h2>
+  <p>Les noms des joueurs, les jeux de cartes personnalisés et les photos ajoutées aux cartes personnalisées sont stockés uniquement en local sur votre appareil. Ils ne sont jamais téléversés et sont supprimés lorsque vous supprimez l'application.</p>
+  <h2>Achats</h2>
+  <p>Les abonnements sont traités par Apple via l'App Store. Pour valider les achats, l'application utilise RevenueCat, qui traite un identifiant anonyme généré aléatoirement ainsi que les reçus d'achat. Cet identifiant ne permet pas de vous identifier personnellement. Voir la <a href="https://www.revenuecat.com/privacy" rel="noopener">politique de confidentialité de RevenueCat</a>.</p>
+  <h2>Photos</h2>
+  <p>Si vous ajoutez des photos aux cartes personnalisées, l'application demande l'accès à la photothèque. Les photos sélectionnées ne quittent jamais votre appareil.</p>
+  <h2>Enfants</h2>
+  <p>L'application est classée 17+ et ne s'adresse pas aux enfants.</p>
+  <h2>Contact</h2>
+  <p>Des questions ? Contactez-nous à <a href="mailto:shanebusiness99@gmail.com">shanebusiness99@gmail.com</a>.</p>
+</section>
 
-<h2>Contact</h2>
-<p>Questions? Contact us at <a href="mailto:shanebusiness99@gmail.com">shanebusiness99@gmail.com</a>.</p>
+<section data-lang="es">
+  <h1>Política de privacidad</h1>
+  <p class="updated">Viking: Party Game — Última actualización: 7 de agosto de 2026</p>
+  <h2>Resumen</h2>
+  <p>Viking: Party Game no recopila, almacena ni comparte datos personales. Sin cuentas, sin análisis, sin rastreo y sin anuncios.</p>
+  <h2>Datos almacenados en tu dispositivo</h2>
+  <p>Los nombres de los jugadores, los mazos personalizados y las fotos que añades a tus cartas se guardan solo localmente en tu dispositivo. Nunca se suben a ningún sitio y se eliminan al borrar la app.</p>
+  <h2>Compras</h2>
+  <p>Las suscripciones las procesa Apple a través del App Store. Para validar las compras, la app usa RevenueCat, que procesa un identificador anónimo generado aleatoriamente y los recibos de compra. Este identificador no permite identificarte personalmente. Consulta la <a href="https://www.revenuecat.com/privacy" rel="noopener">política de privacidad de RevenueCat</a>.</p>
+  <h2>Fotos</h2>
+  <p>Si añades fotos a tus cartas personalizadas, la app pide acceso a la fototeca. Las fotos seleccionadas nunca salen de tu dispositivo.</p>
+  <h2>Menores</h2>
+  <p>La app tiene clasificación 17+ y no está dirigida a menores.</p>
+  <h2>Contacto</h2>
+  <p>¿Preguntas? Escríbenos a <a href="mailto:shanebusiness99@gmail.com">shanebusiness99@gmail.com</a>.</p>
+</section>
 
-<hr>
+<section data-lang="pt">
+  <h1>Política de privacidade</h1>
+  <p class="updated">Viking: Party Game — Última atualização: 7 de agosto de 2026</p>
+  <h2>Resumo</h2>
+  <p>Viking: Party Game não recolhe, armazena nem partilha dados pessoais. Sem contas, sem análises, sem rastreamento e sem anúncios.</p>
+  <h2>Dados guardados no teu dispositivo</h2>
+  <p>Os nomes dos jogadores, os baralhos personalizados e as fotos que adicionas às tuas cartas são guardados apenas localmente no teu dispositivo. Nunca são enviados para lado nenhum e são eliminados quando apagas a app.</p>
+  <h2>Compras</h2>
+  <p>As subscrições são processadas pela Apple através da App Store. Para validar compras, a app usa o RevenueCat, que processa um identificador anónimo gerado aleatoriamente e os recibos de compra. Este identificador não permite identificar-te pessoalmente. Consulta a <a href="https://www.revenuecat.com/privacy" rel="noopener">política de privacidade da RevenueCat</a>.</p>
+  <h2>Fotos</h2>
+  <p>Se adicionares fotos às tuas cartas personalizadas, a app pede acesso à fototeca. As fotos selecionadas nunca saem do teu dispositivo.</p>
+  <h2>Crianças</h2>
+  <p>A app tem classificação 17+ e não se destina a crianças.</p>
+  <h2>Contacto</h2>
+  <p>Dúvidas? Contacta-nos em <a href="mailto:shanebusiness99@gmail.com">shanebusiness99@gmail.com</a>.</p>
+</section>
 
-<h1>Personvernerklæring</h1>
-<p class="updated">Viking: Party Game — Sist oppdatert: 7. august 2026</p>
+<section data-lang="th">
+  <h1>นโยบายความเป็นส่วนตัว</h1>
+  <p class="updated">Viking: Party Game — อัปเดตล่าสุด: 7 สิงหาคม 2026</p>
+  <h2>สรุป</h2>
+  <p>Viking: Party Game ไม่เก็บรวบรวม จัดเก็บ หรือแบ่งปันข้อมูลส่วนบุคคลใด ๆ ไม่มีบัญชีผู้ใช้ ไม่มีการวิเคราะห์ ไม่มีการติดตาม และไม่มีโฆษณา</p>
+  <h2>ข้อมูลที่จัดเก็บบนอุปกรณ์ของคุณ</h2>
+  <p>ชื่อผู้เล่น สำรับการ์ดที่สร้างเอง และรูปภาพที่คุณเพิ่มลงในการ์ดจะถูกจัดเก็บไว้ในอุปกรณ์ของคุณเท่านั้น จะไม่ถูกอัปโหลดไปที่ใด และจะถูกลบเมื่อคุณลบแอป</p>
+  <h2>การซื้อ</h2>
+  <p>การสมัครสมาชิกดำเนินการโดย Apple ผ่าน App Store เพื่อยืนยันการซื้อ แอปใช้ RevenueCat ซึ่งประมวลผลตัวระบุแบบไม่ระบุตัวตนที่สร้างขึ้นแบบสุ่มและใบเสร็จการซื้อ ตัวระบุนี้ไม่สามารถใช้ระบุตัวตนของคุณได้ ดู<a href="https://www.revenuecat.com/privacy" rel="noopener">นโยบายความเป็นส่วนตัวของ RevenueCat</a></p>
+  <h2>รูปภาพ</h2>
+  <p>หากคุณเพิ่มรูปภาพลงในการ์ดที่สร้างเอง แอปจะขอสิทธิ์เข้าถึงคลังรูปภาพ รูปภาพที่เลือกจะไม่ออกจากอุปกรณ์ของคุณ</p>
+  <h2>เด็ก</h2>
+  <p>แอปนี้จัดเรตอายุ 17+ และไม่ได้มุ่งเป้าไปที่เด็ก</p>
+  <h2>ติดต่อ</h2>
+  <p>มีคำถาม? ติดต่อเราได้ที่ <a href="mailto:shanebusiness99@gmail.com">shanebusiness99@gmail.com</a></p>
+</section>
 
-<h2>Oppsummering</h2>
-<p>Viking: Party Game samler ikke inn, lagrer eller deler personopplysninger. Ingen kontoer, ingen analyse, ingen sporing og ingen reklame.</p>
-
-<h2>Data lagret på enheten din</h2>
-<p>Spillernavn, egendefinerte kortstokker og bilder du legger til på egne kort lagres kun lokalt på enheten din. De lastes aldri opp noe sted og slettes når du sletter appen.</p>
-
-<h2>Kjøp</h2>
-<p>Abonnementer behandles av Apple via App Store. For å validere kjøp bruker appen RevenueCat, som behandler en anonym, tilfeldig generert identifikator og kjøpskvitteringer. Identifikatoren kan ikke brukes til å identifisere deg. Se <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCats personvernerklæring</a>.</p>
-
-<h2>Bilder</h2>
-<p>Hvis du legger bilder på egne kort, ber appen om tilgang til bildebiblioteket. Valgte bilder forlater aldri enheten din.</p>
-
-<h2>Barn</h2>
-<p>Appen har aldersgrense 17+ og er ikke rettet mot barn.</p>
-
-<h2>Kontakt</h2>
-<p>Spørsmål? Kontakt oss på <a href="mailto:shanebusiness99@gmail.com">shanebusiness99@gmail.com</a>.</p>
+<script>
+(function () {
+  var supported = ['en', 'no', 'sv', 'da', 'fr', 'es', 'pt', 'th'];
+  function show(lang) {
+    if (supported.indexOf(lang) === -1) lang = 'en';
+    document.querySelectorAll('section[data-lang]').forEach(function (s) {
+      s.style.display = s.getAttribute('data-lang') === lang ? 'block' : 'none';
+    });
+    document.querySelectorAll('#langs button').forEach(function (b) {
+      b.classList.toggle('active', b.getAttribute('data-pick') === lang);
+    });
+    document.documentElement.lang = lang;
+  }
+  document.getElementById('langs').addEventListener('click', function (e) {
+    var pick = e.target.getAttribute && e.target.getAttribute('data-pick');
+    if (pick) show(pick);
+  });
+  var nav = (navigator.language || 'en').toLowerCase();
+  var initial = nav.split('-')[0];
+  if (initial === 'nb' || initial === 'nn') initial = 'no';
+  var hash = (location.hash || '').replace('#', '');
+  show(supported.indexOf(hash) !== -1 ? hash : initial);
+})();
+</script>
 
 </body>
 </html>
